@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+:root {
+  --text-color: #0a0a0a;
+  --border-color:#e9ecef;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+  width: 100%;
+  margin: auto;
+}
+
+.header .wrap {
+  display: flex;
+  align-items: center;
+}
+.header .logo {
+  margin-right: 1.5rem;
+}
+.header .logo img {
+  height: 30px;
+}
+
+.nav .menu {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+.nav .menu > .nav__item .nav__link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2.5px;
+  background-color: #000;
+  transition: all ease 0.35s;
+}
+.nav .nav__item {
+  position: relative;
+}
+.nav .nav__item:not(:hover) .dropdown {
+  opacity: 0;
+  visibility: hidden;
+}
+.nav .nav__link {
+  color: var(--text-color);
+  font-weight: 600;
+  position: relative;
+  padding: 1rem 0;
+}
+.nav .nav__link:hover::before {
+  width: 100%;
+  left: 0;
+  right: initial;
+}
+.nav .dropdown {
+  position: absolute;
+  top: calc(100% + 1rem);
+  left: 0;
+  min-width: 150px;
+  box-shadow: 0 5px 40px rgba(0, 0, 0, 0.15);
+  opacity: 1;
+  visibility: visible;
+  transition: opacity ease 0.35s;
+  z-index: 10;
+}
+.nav .dropdown .nav__item {
+  padding: 0.5rem 1rem;
+}
+.nav .dropdown .nav__item:not(:last-child) {
+  border-bottom: solid 1px var(--border-color);
+}
+
+.extra-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+.extra-menu button {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=compilado.css.map */

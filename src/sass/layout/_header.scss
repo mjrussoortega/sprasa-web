@@ -1,0 +1,15 @@
+.header {
+    .wrap {
+        display: flex;
+        align-items: center;
+    }
+
+    .logo {
+        margin-right: 1.5rem;
+
+        img {
+            height: 30px;
+        }
+    }
+
+}
