@@ -7,9 +7,24 @@
     .logo {
         margin-right: 1.5rem;
 
+        &__white {
+            display: none;
+        }
+
         img {
             height: 30px;
         }
     }
 
+}
+
+.dark {
+    .logo {
+        &__dark {
+            display: none;
+        }
+        &__white {
+            display: block;
+        }
+    }
 }
