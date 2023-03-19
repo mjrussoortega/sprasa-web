@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+        }
+
+        img {
+            max-width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h2>Tienda</h2>
+
+        <ul class="products">
+            <li class="product product__1"><span class="product__title">Product 1</span> <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png"> <button class="add-favorite">Add</button></li>
+            <li class="product product__2"><span class="product__title">Product 2</span> <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png"> <button class="add-favorite">Add</button></li>
+            <li class="product product__3"><span class="product__title">Product 3</span> <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png"> <button class="add-favorite">Add</button></li>
+            <li class="product product__4"><span class="product__title">Product 4</span> <img src="https://cdn-icons-png.flaticon.com/512/3577/3577429.png"> <button class="add-favorite">Add</button></li>
+        </ul>
+    </div>
+
+    <div>
+        <h2>Favoritos</h2>
+
+        <ul class="favorites"></ul>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
