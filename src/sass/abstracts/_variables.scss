@@ -4,21 +4,32 @@ $border-color: #e9ecef;
 :root {
     --text-color: #{$text-color};
     --body-bg: #FFF;
-    --bg-opacity: rgba(255,255,255, .97);
+    --bg-opacity: rgba(255, 255, 255, .97);
     --border-color:#{$border-color};
 
     --border-dark: #000;
     --border-light: #{$border-color};
+
+    --hover-color: #f75454;
+
+    --post-category: #eba845;
+
+    --color-p: #000;
+
+    --bg-button: #000;
 }
 
 .dark {
     &:root {
         --text-color: #FFF;
         --body-bg: #1a1a1a;
-        --bg-opacity: rgba(0,0,0, .97);
+        --bg-opacity: rgba(0, 0, 0, .97);
         --border-color: #FFF;
-        
+
         --border-dark: #FFF;
         --border-light: #282828;
+        --color-p: #cacaca;
+
+        --bg-button: #484848;
     }
 }

@@ -11,6 +11,8 @@
     opacity: 0;
     visibility: hidden;
     transition: all ease .35s;
+    z-index: 9999999;
+
 
     &.active {
         opacity: 1;
@@ -22,12 +24,17 @@
         top: 1rem;
         right: 1rem;
         font-size: 1.5rem;
+        color: var(--text-color);
+
+        &:hover {
+            cursor: pointer;
+        }
 
     }
 
     &__form {
         input {
-            border: solid black;
+            border: solid var(--text-color);
             border-width: 0 0 1px 0;
             padding: .5rem 0;
             font-size: 2rem;

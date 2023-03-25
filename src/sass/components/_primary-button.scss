@@ -1,0 +1,23 @@
+.primary-button-wrap {
+    text-align: center;
+
+    .primary-button {
+        display: inline-block;
+        background-color: var(--bg-button);
+        border-radius: 0.313rem;
+        height: 40px;
+        line-height: 40px;
+        transition: all ease .35s;
+
+        &:hover {
+            background-color: var(--hover-color);
+        }
+
+        a {
+            padding: 0 2.5rem;
+            font-size: 0.813rem;
+            color: #fff;
+        }
+
+    }
+}

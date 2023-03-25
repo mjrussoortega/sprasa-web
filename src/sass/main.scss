@@ -9,6 +9,13 @@
 @forward "layout/navigation";
 @forward "layout/mobile-menu";
 @forward "layout/desktop-menu";
+@forward "layout/posts";
+
+
+@forward "layout/hero";
+
 
 
 @forward "components/search-modal";
+@forward "components/post-widget";
+@forward "components/primary-button";

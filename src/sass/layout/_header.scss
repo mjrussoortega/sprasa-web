@@ -1,4 +1,7 @@
 .header {
+    border-bottom: 1px solid #ebebeb;
+    padding: 1rem;
+
     .wrap {
         display: flex;
         align-items: center;
@@ -23,6 +26,7 @@
         &__dark {
             display: none;
         }
+
         &__white {
             display: block;
         }
