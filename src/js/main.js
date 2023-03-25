@@ -64,7 +64,7 @@ button_dark.addEventListener('click', function () {
 
 const LOCAL_STOGARE_NAME = 'favorites';
 const posts = document.querySelectorAll(".post");
-let favorites = localStorage.getItem(LOCAL_STOGARE_NAME) || [];
+let favorites = JSON.parse(localStorage.getItem(LOCAL_STOGARE_NAME)) || [];
 
 renderFavorites();
 
@@ -97,7 +97,7 @@ function renderFavorites() {
     favorites_list.innerHTML = '';
 
     favorites.forEach(el => {
-        favorites_list.innerHTML += '<li> <img src="${el.img}"> <h3>${el.title}</h3> </li>';
+        favorites_list.innerHTML += `<li> <img src="${el.img}"> <h3>${el.title}</h3> </li>`;
     })
 }
 
