@@ -1,10 +1,16 @@
-.menu {
-    .nav__link {
-        color: var(--text-color);
-        font-weight: 600;
-        position: relative;
-        padding: 1rem 0;
-        display: block;
+.nav {
+    height: 100%;
+    .menu {
+        height: 100%;
+        .nav__link {
+            height: 100%;
+            color: var(--text-color);
+            font-weight: 600;
+            position: relative;
+            // padding: 1rem 0;
+            display: flex;
+            align-items: center;
+        }
     }
 }
 
