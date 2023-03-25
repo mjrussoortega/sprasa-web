@@ -4,8 +4,10 @@ const open_menu = document.querySelector(".extra-menu__nav");
 const closed_menu = document.querySelector(".closed-menu");
 const menu = document.querySelector(".mobile-menu");
 const backdrop = document.querySelector(".backdrop-menu");
+const body = document.querySelector("body");
 
 function toggle_menu() {
+    body.classList.toggle("dropdown-active");
     menu.classList.toggle("active");
     backdrop.classList.toggle("active");
 }
